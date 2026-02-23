@@ -1,3 +1,11 @@
+<!-- ===== HEADER TIMELINE ===== -->
+
+<div align="center">
+  <img src="./assets/header-timeline.png" alt="Aditya Kumar Darak - Personal Timeline" width="100%" />
+</div>
+
+<br />
+
 <!-- ===== TYPING SVG ===== -->
 
 <div align="center">
@@ -146,13 +154,13 @@ Let's keep asking. Let's keep exploring. Let's grow together.
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/Hermione-Granger-1176/Hermione-Granger-1176/main/github-snake-dark.svg"
+      srcset="https://raw.githubusercontent.com/Hermione-Granger-1176/Hermione-Granger-1176/main/assets/github-snake-dark.svg"
     />
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/Hermione-Granger-1176/Hermione-Granger-1176/main/github-snake.svg"
+      srcset="https://raw.githubusercontent.com/Hermione-Granger-1176/Hermione-Granger-1176/main/assets/github-snake.svg"
     />
-    <img alt="Snake animation" src="https://raw.githubusercontent.com/Hermione-Granger-1176/Hermione-Granger-1176/main/github-snake.svg" width="100%" />
+    <img alt="Snake animation" src="https://raw.githubusercontent.com/Hermione-Granger-1176/Hermione-Granger-1176/main/assets/github-snake.svg" width="100%" />
   </picture>
 </div>
 
