@@ -1,0 +1,34 @@
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?color_snake=%23FFD100&color_dots=%23ebedf0,%23f0d090,%23e6b422,%23d4a017,%23c8960c
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=%23FFD100&color_dots=%23161b22,%23352a00,%23554400,%23997a00,%23FFD100
+
+      - run: |
+          cp dist/github-snake.svg github-snake.svg
+          cp dist/github-snake-dark.svg github-snake-dark.svg
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update snake animation"
+          file_pattern: "github-snake.svg github-snake-dark.svg"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
