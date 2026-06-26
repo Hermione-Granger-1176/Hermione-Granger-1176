@@ -32,7 +32,7 @@
 
 ## Hey there 👋,
 
-I transform financial processes using AI, build financial models with dynamic arrays in Excel, and automate complex processes using Power Query at **Profectus**.
+I transform financial processes using AI, build financial models with dynamic arrays in Excel, and automate complex processes using Power Query at [**SumProduct**](https://sumproduct.com/).
 
 But behind the job title, there's one thing I chase relentlessly: **Curiosity**.
 
